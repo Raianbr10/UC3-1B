@@ -71,21 +71,34 @@ a = 2 -> atribui valor de 2 para a
 ## Lógicos
 && significa E || siginifica Ou
 ## Comparação 
-== igual
-=== igual
-> maior que
-< menor que
->= maior igual a
-<= menor igual a
-!== diferente
-!= diferente
+"==" igual
+
+"===" igual
+
+">"  maior que
+
+"<" menor que
+
+">="   maior igual a
+
+"<=" menor igual a
+
+"!==" diferente
+
+"!=" diferente
+
 # Matemáticos
-+ mais
-- menos
-* multiplicação
-/ divisão
-% módulo ( ou resto)
-** poténcia
+"+" mais
+
+"-" menos
+
+"*" multiplicação
+
+"/" divisão
+
+"%" módulo ( ou resto)
+
+"**" poténcia
 
 
 ## Atividades desenvolvidas
