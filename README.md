@@ -101,6 +101,139 @@ a = 2 -> atribui valor de 2 para a
 "**" poténcia
 
 
+
+# Arrays em JavaScript
+
+## O que é um Array?
+Em JavaScript, um array é um tipo de estrutura de dados que armazena uma lista ordenada de valores. Esses valores podem ser de qualquer tipo, como números, strings, objetos ou até mesmo outros arrays. Os arrays são zero-indexados, o que significa que o primeiro elemento tem o índice 0, o segundo elemento tem o índice 1 e assim por diante.
+
+## Criando Arrays
+Existem várias formas de criar um array em JavaScript:
+
+## Usando a Notação de Colchetes:
+
+``` js
+let frutas = ['maçã', 'banana', 'laranja'];
+```
+## Usando o Construtor Array:
+``` js
+let numeros = new Array(10, 20, 30);
+```
+## Ou, se você quiser criar um array com um tamanho específico (sem valores definidos):
+
+``` js
+let vazio = new Array(5); // Um array com 5 posições, todas indefinidas
+
+```
+
+# Tipos de Arrays
+Embora todos os arrays em JavaScript sejam do mesmo tipo (Array), eles podem conter diferentes tipos de elementos:
+
+## Arrays de Números:
+``` js
+let numeros = [1, 2, 3, 4, 5];
+```
+## Arrays de Strings:
+``` js
+let palavras = ['hello', 'world', 'JavaScript'];
+```
+## Arrays Mistas:
+``` js
+let misto = [1, 'texto', true, { chave: 'valor' }, [1, 2, 3]];
+```
+## Arrays de Objetos:
+``` js
+let pessoas = [
+  { nome: 'João', idade: 30 },
+  { nome: 'Maria', idade: 25 }
+];
+
+```
+## rrays Multidimensionais (Arrays de Arrays):
+``` js
+let matriz = [
+  [1, 2, 3],
+  [4, 5, 6],
+  [7, 8, 9]
+];
+```
+# Manipulando Arrays
+Aqui estão alguns exemplos de como você pode manipular arrays:
+
+## Acessar Elementos:
+``` js
+let frutas = ['maçã', 'banana', 'laranja'];
+console.log(frutas[0]); // 'maçã'
+
+```
+## Adicionar Elementos:
+``` js
+let frutas = ['maçã', 'banana'];
+frutas.push('laranja'); // Adiciona 'laranja' ao final do array
+console.log(frutas); // ['maçã', 'banana', 'laranja']
+
+```
+## Remover Elementos:
+``` js
+let frutas = ['maçã', 'banana', 'laranja'];
+frutas.pop(); // Remove 'laranja' do final
+console.log(frutas); // ['maçã', 'banana']
+
+```
+## Iterar Sobre um Array:
+``` js
+let frutas = ['maçã', 'banana', 'laranja'];
+frutas.forEach(function(fruta) {
+  console.log(fruta);
+});
+```
+## Filtrar Elementos:
+``` js
+let numeros = [1, 2, 3, 4, 5];
+let pares = numeros.filter(function(numero) {
+  return numero % 2 === 0;
+});
+console.log(pares); // [2, 4]
+```
+## Transformar Elementos:
+``` js
+let numeros = [1, 2, 3];
+let aoQuadrado = numeros.map(function(numero) {
+  return numero * numero;
+});
+console.log(aoQuadrado); // [1, 4, 9]
+```
+## Encontrar Elementos:
+``` js
+let frutas = ['maçã', 'banana', 'laranja'];
+let encontrada = frutas.find(function(fruta) {
+  return fruta === 'banana';
+});
+console.log(encontrada); // 'banana'
+
+```
+## Ordenar Elementos:
+``` js
+let numeros = [3, 1, 4, 1, 5, 9];
+numeros.sort(function(a, b) {
+  return a - b;
+});
+console.log(numeros); // [1, 1, 3, 4, 5, 9]
+
+```
+
+# Métodos Úteis de Arrays
+concat(): Junta dois ou mais arrays.
+join(): Junta todos os elementos de um array em uma string.
+reverse(): Inverte a ordem dos elementos.
+slice(): Retorna uma cópia superficial de uma parte do array.
+splice(): Adiciona ou remove elementos em uma posição específica.
+
+# Conclusão
+Arrays são uma estrutura de dados fundamental em JavaScript e oferecem uma grande flexibilidade para armazenar e manipular listas de valores. Eles são amplamente utilizados em várias operações e são uma parte essencial do desenvolvimento em JavaScript.
+
+
+
 ## Atividades desenvolvidas
 Escreva aqui as atividades desenvolvidas em sala e para casa. Você pode detelhar a atividade e usar links das atividades do codepen e vídeos desenvolvidos em sala. 
 
