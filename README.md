@@ -2,9 +2,10 @@
 Boas vindas! Este é seu caderno virtual. Aqui você deverá guardar todos os conceitos aprendidos e atiuvidades dessa unidade curricular. 
 
 
-## História de Js
+# História de Js
 Javascript em sua historia começou no ano de 1995 por Brendan Eich, a pedido de uma empresa chamada Netscape, o js foi criado com o intuito de que scripts pudessem ser executados do lado do clietne e interagissem com o usuário sem que o script tivesse que passar pelo servidor.
 
+ 
 ## O que o javascript é capaz de fazer
 Uma função de JavaScript do lado do servidor pode acessar o banco de dados, realizar diferentes operações lógicas e responder a diversos eventos acionados pelo sistema operacional do servidor.
 o Javascript funicona bem mais do lado do cliente.
@@ -149,7 +150,7 @@ let pessoas = [
 ];
 
 ```
-## rrays Multidimensionais (Arrays de Arrays):
+## Arrays Multidimensionais (Arrays de Arrays):
 ``` js
 let matriz = [
   [1, 2, 3],
@@ -231,6 +232,78 @@ splice(): Adiciona ou remove elementos em uma posição específica.
 
 # Conclusão
 Arrays são uma estrutura de dados fundamental em JavaScript e oferecem uma grande flexibilidade para armazenar e manipular listas de valores. Eles são amplamente utilizados em várias operações e são uma parte essencial do desenvolvimento em JavaScript.
+
+# Switch case js
+## O que é um switch case
+O switch case em JavaScript é uma estrutura de controle muito útil quando estamos trabalhando com uma variável que pode assumir diferentes valores possíveis e, a partir desses valores, executar diferentes blocos de código correspondentes.
+
+``` js
+const fruta = prompt("Que fruta você deseja?")
+switch (fruta) {
+case 'laranja' :
+console.log(" A laranja custa R$1,00 Real a unidade!")
+break;
+case 'maça' :
+console.log("A maça custa R$0,50 a unidade!")
+break;
+default :
+console.log(`mas não temos a fruta ${fruta}.`);
+}
+```
+
+# explicação
+### const fruta
+o cont é para criar uma variável, e "fruta" foi o nome da variavél escolhida!
+
+### switch
+serve para iniciar o switch case, ele é de entrada, o nome é escolha em português logo você vê que serve para dar opções para úsuario.
+
+### case
+serve para dar o caso ao úsuario, de forma mais explicado, "se o úsuario falar tal coisa execute tal coisa".
+
+### break
+serve para quebrar o código, num bom sentido claro kkkkk, mas ele vai quebrar o código do case1 para poder dar outra opção de caso.
+
+### default
+serve para quando o úsuario escrever algo que não tenha em nenhum dos casos.
+
+# if else
+A condicional if é uma estrutura condicional que executa a afirmação, dentro do bloco, se determinada condição for verdadeira. Se for falsa, executa as afirmações dentro de else.
+### exemplo
+``` js
+var frutas = ["maçã", "banana", "caju"];
+var pergunta = prompt (" escolha dentre as opções: maçã, banana, caju")
+
+var pos = frutas.indexOf(pergunta);
+
+if (pergunta === "maçã" || pergunta === "banana" || pergunta === "caju"){
+    console.log(`a fruta ${pergunta} esta pronta para entrega`);
+    }else{
+      console.log("Não encontramos essa fruta em nosso estoque");
+    }
+```
+# function (funções)
+
+Funções são blocos de construção fundamentais em JavaScript. Uma função é um procedimento de JavaScript - um conjunto de instruções que executa uma tarefa ou calcula um valor. Para usar uma função, você deve defini-la em algum lugar no escopo do qual você quiser chamá-la.
+### para que serve?
+Em JavaScript, as funções servem para:
+ 
+Organizar o código: Dividindo o código em funções menores, você torna o seu programa mais fácil de entender e manter. Cada função pode ter uma tarefa específica, como calcular uma área, verificar se um número é par ou fazer uma animação.
+Reutilizar código: Uma vez que você criou uma função, pode chamá-la quantas vezes quiser, em diferentes partes do seu programa. Isso evita que você escreva o mesmo código repetidamente.
+Abstrair complexidade: Funções permitem esconder detalhes de implementação. Por exemplo, você pode criar uma função para ordenar uma lista de números, mas quem usa essa função não precisa saber exatamente como o algoritmo de ordenação funciona.
+Criar programas modulares: Funções são a base para criar módulos em JavaScript, que são partes independentes de um programa. Isso facilita a colaboração em projetos maiores e a reutilização de código em diferentes projetos.
+
+
+
+### Exemplo simples: 
+``` js
+function saudacao(nome) {
+  console.log("Olá, " + nome + "!");
+}
+
+saudacao("Maria"); // Imprime "Olá, Maria!"
+saudacao("João"); // Imprime "Olá, João!"
+```
 
 
 
